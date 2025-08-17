@@ -1,43 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>Hangul Typing Quiz</title>
-  <style>
-    body { font-family: sans-serif; padding:20px; }
-    #word { font-size:2em; margin:20px 0; }
-    input { font-size:1.2em; }
-    #review { margin-top:20px; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hangul Typing Quiz</title>
+<style>
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:#f6f7fb;color:#111;
+    font-family:system-ui,-apple-system,Segoe UI,Noto Sans JP,sans-serif;
+    min-height:100vh;display:flex;justify-content:center;align-items:flex-start;
+  }
+  .container{width:min(820px,92vw);margin:40px auto;background:#fff;border:1px solid #e6e8ef;border-radius:14px;padding:22px 20px}
+  h1{margin:0 0 12px;font-size:26px}
+  .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .grow{flex:1 1 auto}
+  #word{font-size:28px;font-weight:800;margin:16px 0}
+  input[type=text]{width:100%;font-size:20px;padding:12px 14px;border:2px solid #e3e7ef;border-radius:12px;background:#fafbfe}
+  input[type=text]:focus{border-color:#111;background:#fff;outline:none}
+  button{border:1px solid #d6d9e3;background:#fff;border-radius:10px;padding:10px 14px;font-weight:600;cursor:pointer}
+  button.primary{background:#111;color:#fff;border-color:#111}
+  .muted{color:#666}.ok{color:#0a7a33;font-weight:700}.ng{color:#c00;font-weight:700}
+  .card{margin-top:16px;padding:14px;border:1px solid #eceef4;border-radius:12px;background:#fff}
+  .list{max-height:220px;overflow:auto;border:1px solid #eee;padding:8px;border-radius:10px;background:#fafbfd}
+  .tiny{font-size:12px;color:#666}
+</style>
 </head>
 <body>
+<div class="container">
   <h1>Hangul Typing Quiz</h1>
 
-  <label>レベル選択: 
-    <select id="levelSelect">
-      <option value="level1.json">Level 1 (1–100)</option>
-      <option value="level2.json">Level 2 (101–200)</option>
-      <option value="level3.json">Level 3 (201–300)</option>
-      <!-- 必要に応じて追加 -->
-    </select>
-  </label>
-  <button id="loadLevel">読み込み</button>
-  <br><br>
+  <div class="row">
+    <label>レベル選択:
+      <select id="levelSelect">
+        <option value="data/level1.json">Level 1（1–100）</option>
+        <option value="data/level2.json">Level 2（101–200）</option>
+        <option value="data/level3.json">Level 3（201–300）</option>
+      </select>
+    </label>
+    <button id="loadLevel" class="primary">読み込み</button>
+    <div class="grow"></div>
+    <button id="enableAudio">🔊 音声を有効化</button>
+    <label class="tiny"><input type="checkbox" id="autoSpeak" checked> 正解時に読み上げ</label>
+    <label class="tiny"><input type="checkbox" id="autoNext"> 正解しても自動で次へ進まない（OFFで手動Next）</label>
+  </div>
 
-  <div id="word">---</div>
-  <input id="answer" placeholder="ここにハングルを入力" autocomplete="off">
-  <button id="checkBtn">判定</button>
-  <button id="hintBtn">ヒント音声</button>
+  <div class="card">
+    <div class="tiny">問題</div>
+    <div id="word">--- 読み込み待ち ---</div>
+    <input id="answer" type="text" placeholder="ここにハングルを入力" autocomplete="off" spellcheck="false">
+    <div id="result" class="muted" style="min-height:26px">Enter でも判定できます</div>
+    <div class="row">
+      <button id="checkBtn" class="primary">判定（Enter）</button>
+      <button id="nextBtn">次へ →</button>
+      <button id="hintBtn">ヒント音声</button>
+      <div class="grow"></div>
+      <label class="tiny"><input type="checkbox" id="reviewOnly"> 復習モード（間違いのみ）</label>
+    </div>
+  </div>
 
-  <div id="result"></div>
+  <div class="card">
+    <div class="row">
+      <b>復習リスト</b>
+      <div class="grow"></div>
+      <button id="startReview" class="primary">復習だけで出題</button>
+      <button id="clearReview">復習をクリア</button>
+    </div>
+    <div id="reviewStats" class="tiny" style="margin-top:6px">項目: 0</div>
+    <div id="review" class="list tiny"></div>
+  </div>
+</div>
 
-  <label><input type="checkbox" id="reviewOnly"> 復習モード（間違いのみ）</label>
-  <button id="btnStartReview">復習だけで出題</button>
-  <button id="clearReview">復習をクリア</button>
-
-  <h3>復習リスト</h3>
-  <ul id="review"></ul>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
