@@ -26,29 +26,50 @@ let REVIEW = new Set();
 
 let audioReady = false, cachedVoice=null, lastSpoken="", lastSpeakAt=0;
 
-// ====== 音周り ======
+// ====== 音周り（修正版） ======
 function primeAudio(){
+  // WebAudio 側を一瞬鳴らして自動再生制限を解禁
   try{
     const Ctx = window.AudioContext||window.webkitAudioContext;
     const ctx=new Ctx(), o=ctx.createOscillator(), g=ctx.createGain();
     g.gain.value=0; o.connect(g).connect(ctx.destination); o.start(); o.stop(ctx.currentTime+0.02);
   }catch{}
-  if ('speechSynthesis' in window) cachedVoice = speechSynthesis.getVoices().find(v=>/ko|Korean|한국어/i.test((v.lang||"")+(v.name||"")))||null;
+
+  // WebSpeech の voice ロード（何度かコールされてもOK）
+  if ('speechSynthesis' in window) {
+    const tryVoices = () => {
+      const vs = speechSynthesis.getVoices();
+      if (vs && vs.length && !cachedVoice) {
+        cachedVoice = vs.find(v=>/ko|Korean|한국어/i.test((v.lang||"")+(v.name||""))) || null;
+      }
+    };
+    tryVoices();
+    speechSynthesis.onvoiceschanged = tryVoices;
+  }
   audioReady = true;
 }
+
+// 初回のユーザー操作で自動解禁（保険）
+window.addEventListener('pointerdown', ()=>{ if(!audioReady) primeAudio(); }, {once:true});
+
+// 1回だけ・確実に読み上げ（重複/被り防止）
 function speakKo(text){
   if (!("speechSynthesis" in window)) return;
-  const now=Date.now();
-  if (text===lastSpoken && now-lastSpeakAt<600) return;
-  lastSpoken=text; lastSpeakAt=now;
-  try{ speechSynthesis.cancel(); }catch(_){}
-  setTimeout(()=>{
+  const now = Date.now();
+  if (text === lastSpoken && now - lastSpeakAt < 600) return; // デバウンス
+  lastSpoken = text; lastSpeakAt = now;
+
+  try { speechSynthesis.cancel(); speechSynthesis.resume(); } catch (_) {}
+
+  setTimeout(() => {
     const u = new SpeechSynthesisUtterance(text);
     u.rate = 0.95;
-    if (cachedVoice){ u.voice=cachedVoice; u.lang=cachedVoice.lang; } else { u.lang="ko-KR"; }
+    if (cachedVoice){ u.voice = cachedVoice; u.lang = cachedVoice.lang; }
+    else { u.lang = "ko-KR"; }
     speechSynthesis.speak(u);
   }, 60);
 }
+
 function beep(type="ok"){
   try{
     const Ctx = window.AudioContext||window.webkitAudioContext; if(!Ctx) return;
@@ -96,7 +117,7 @@ function renderReview(){
   $("#reviewStats").textContent = `項目: ${REVIEW.size}`;
 }
 
-// ====== 判定 ======
+// ====== 判定（正解でも自動で次へ行かない） ======
 function checkAnswer(){
   const q = data[idx]; if (!q) return;
   const ans = $("#answer").value.trim().normalize("NFC");
@@ -105,8 +126,8 @@ function checkAnswer(){
   if (ok){
     $("#result").textContent="⭕ 正解！"; $("#result").className="ok";
     if ($("#autoSpeak").checked && audioReady) speakKo(q.word); else if ($("#autoSpeak").checked) beep("ok");
-    // 自動で次へ進まない（要望）: チェックON時のみ進む
-    if ($("#autoNext").checked){ showQuestion(); }
+    // ここでは showQuestion() を呼ばない。次へはボタンのみ。
+    if ($("#autoNext").checked){ showQuestion(); } // ←必要ならチェックで自動進行
   }else{
     $("#result").innerHTML=`❌ 不正解 → <b>${q.word}</b>`; $("#result").className="ng";
     beep("ng");
@@ -141,5 +162,24 @@ $("#hintBtn").addEventListener("click", ()=>{ const q=data[idx]; if(q){ if(audio
 $("#startReview").addEventListener("click", ()=>{ if(!REVIEW.size) return alert("復習リストは空です"); $("#reviewOnly").checked=true; showQuestion(); });
 $("#clearReview").addEventListener("click", ()=>{ REVIEW.clear(); renderReview(); });
 $("#answer").addEventListener("keydown", e=>{ if(e.key==="Enter"){ e.preventDefault(); checkAnswer(); } });
-$("#enableAudio").addEventListener("click", ()=>{ primeAudio(); alert("音声を有効化しました"); });
-if ('speechSynthesis' in window){ speechSynthesis.onvoiceschanged = ()=>{ if(!cachedVoice){ cachedVoice = speechSynthesis.getVoices().find(v=>/ko|Korean|한국어/i.test((v.lang||"")+(v.name||""))); } }; }
+
+// ★音声を有効化（テスト発声つきで確実に解禁）
+$("#enableAudio").addEventListener("click", () => {
+  primeAudio();
+  try { speechSynthesis.cancel(); speechSynthesis.resume(); } catch(_){}
+  const t = new SpeechSynthesisUtterance("가");
+  if (cachedVoice){ t.voice = cachedVoice; t.lang = cachedVoice.lang; } else { t.lang = "ko-KR"; }
+  t.rate = 0.95;
+  speechSynthesis.speak(t);
+  alert("音声を有効化しました（テスト発声済み）");
+});
+
+// 予備：voice が遅延ロードされる環境向け
+if ('speechSynthesis' in window){
+  speechSynthesis.onvoiceschanged = ()=>{
+    if(!cachedVoice){
+      const vs = speechSynthesis.getVoices();
+      cachedVoice = vs.find(v=>/ko|Korean|한국어/i.test((v.lang||"")+(v.name||""))) || cachedVoice;
+    }
+  };
+}
