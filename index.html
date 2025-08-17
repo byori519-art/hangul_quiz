@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Hangul Typing Quiz</title>
+  <style>
+    body { font-family: sans-serif; padding:20px; }
+    #word { font-size:2em; margin:20px 0; }
+    input { font-size:1.2em; }
+    #review { margin-top:20px; }
+  </style>
+</head>
+<body>
+  <h1>Hangul Typing Quiz</h1>
+
+  <label>レベル選択: 
+    <select id="levelSelect">
+      <option value="level1.json">Level 1 (1–100)</option>
+      <option value="level2.json">Level 2 (101–200)</option>
+      <option value="level3.json">Level 3 (201–300)</option>
+      <!-- 必要に応じて追加 -->
+    </select>
+  </label>
+  <button id="loadLevel">読み込み</button>
+  <br><br>
+
+  <div id="word">---</div>
+  <input id="answer" placeholder="ここにハングルを入力" autocomplete="off">
+  <button id="checkBtn">判定</button>
+  <button id="hintBtn">ヒント音声</button>
+
+  <div id="result"></div>
+
+  <label><input type="checkbox" id="reviewOnly"> 復習モード（間違いのみ）</label>
+  <button id="btnStartReview">復習だけで出題</button>
+  <button id="clearReview">復習をクリア</button>
+
+  <h3>復習リスト</h3>
+  <ul id="review"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
