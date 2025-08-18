@@ -1,287 +1,651 @@
 [
   {
     "word": "한글",
-    "meaning": "日本語 No. 한글 日本語"
+    "meaning": "日本語"
   },
   {
     "word": "가게",
-    "meaning": "店 41 감사하다 感謝する"
+    "meaning": "店"
+  },
+  {
+    "word": "가게",
+    "meaning": "感謝する"
   },
   {
     "word": "가격",
-    "meaning": "価格 42 감사합니다 ありがとうございます"
+    "meaning": "価格"
+  },
+  {
+    "word": "가격",
+    "meaning": "ありがとうございます"
   },
   {
     "word": "가구",
-    "meaning": "家具 43 감자 じゃがいも"
+    "meaning": "家具"
+  },
+  {
+    "word": "가구",
+    "meaning": "じゃがいも"
   },
   {
     "word": "가깝다",
-    "meaning": "近い 44 감자탕 カムジャタン"
+    "meaning": "近い"
+  },
+  {
+    "word": "가깝다",
+    "meaning": "カムジャタン"
   },
   {
     "word": "가끔",
-    "meaning": "時々 45 갑자기 急に"
+    "meaning": "時々"
+  },
+  {
+    "word": "가끔",
+    "meaning": "急に"
   },
   {
     "word": "가다",
-    "meaning": "行く 46 값 値段、価値"
+    "meaning": "行く"
+  },
+  {
+    "word": "가다",
+    "meaning": "値段"
+  },
+  {
+    "word": "가다",
+    "meaning": "価値"
   },
   {
     "word": "가르치다",
-    "meaning": "教える 47 강 川"
+    "meaning": "教える"
+  },
+  {
+    "word": "가르치다",
+    "meaning": "川"
   },
   {
     "word": "가방",
-    "meaning": "鞄 48 강아지 子犬"
+    "meaning": "鞄"
+  },
+  {
+    "word": "가방",
+    "meaning": "子犬"
   },
   {
     "word": "가볍다",
-    "meaning": "軽い 49 강좌 講座"
+    "meaning": "軽い"
+  },
+  {
+    "word": "가볍다",
+    "meaning": "講座"
   },
   {
     "word": "가수",
-    "meaning": "歌手 50 갖다 持つ"
+    "meaning": "歌手"
+  },
+  {
+    "word": "가수",
+    "meaning": "持つ"
   },
   {
     "word": "가슴",
-    "meaning": "胸 51 같다 同じだ"
+    "meaning": "胸"
+  },
+  {
+    "word": "가슴",
+    "meaning": "同じだ"
   },
   {
     "word": "가요",
-    "meaning": "歌謡 52 같이 一緒に"
+    "meaning": "歌謡"
+  },
+  {
+    "word": "가요",
+    "meaning": "一緒に"
   },
   {
     "word": "가운데",
-    "meaning": "間、中間 53 개 ～個、犬"
+    "meaning": "間"
+  },
+  {
+    "word": "가운데",
+    "meaning": "中間"
+  },
+  {
+    "word": "가운데",
+    "meaning": "個"
+  },
+  {
+    "word": "가운데",
+    "meaning": "犬"
   },
   {
     "word": "가위",
-    "meaning": "はさみ 54 개나리 レンギョウ"
+    "meaning": "はさみ"
+  },
+  {
+    "word": "가위",
+    "meaning": "レンギョウ"
   },
   {
     "word": "가을",
-    "meaning": "秋 55 개인 個人"
+    "meaning": "秋"
+  },
+  {
+    "word": "가을",
+    "meaning": "個人"
   },
   {
     "word": "가장",
-    "meaning": "最も、一番 56 거기 そこ"
+    "meaning": "最も"
+  },
+  {
+    "word": "가장",
+    "meaning": "一番"
+  },
+  {
+    "word": "가장",
+    "meaning": "そこ"
   },
   {
     "word": "가져가다",
-    "meaning": "持って行く 57 거리 通り、街"
+    "meaning": "持って行く"
+  },
+  {
+    "word": "가져가다",
+    "meaning": "通り"
+  },
+  {
+    "word": "가져가다",
+    "meaning": "街"
   },
   {
     "word": "가져오다",
-    "meaning": "持って来る 58 거실 居室、居間"
+    "meaning": "持って来る"
+  },
+  {
+    "word": "가져오다",
+    "meaning": "居室"
+  },
+  {
+    "word": "가져오다",
+    "meaning": "居間"
   },
   {
     "word": "가족",
-    "meaning": "家族 59 거울 鏡"
+    "meaning": "家族"
+  },
+  {
+    "word": "가족",
+    "meaning": "鏡"
   },
   {
     "word": "가지",
-    "meaning": "種類 60 거의 ほとんど"
+    "meaning": "種類"
+  },
+  {
+    "word": "가지",
+    "meaning": "ほとんど"
   },
   {
     "word": "가지다",
-    "meaning": "持つ 61 거짓말 嘘"
+    "meaning": "持つ"
+  },
+  {
+    "word": "가지다",
+    "meaning": "嘘"
   },
   {
     "word": "각",
-    "meaning": "各、おのおの 62 걱정 心配"
+    "meaning": "各"
+  },
+  {
+    "word": "각",
+    "meaning": "おのおの"
+  },
+  {
+    "word": "각",
+    "meaning": "心配"
   },
   {
     "word": "간",
-    "meaning": "間 63 걱정하다 心配する"
+    "meaning": "間"
+  },
+  {
+    "word": "간",
+    "meaning": "心配する"
   },
   {
     "word": "간단하다",
-    "meaning": "簡単だ 64 건강 健康"
+    "meaning": "簡単だ"
+  },
+  {
+    "word": "간단하다",
+    "meaning": "健康"
   },
   {
     "word": "간단히",
-    "meaning": "簡単に 65 건강하다 健康だ"
+    "meaning": "簡単に"
+  },
+  {
+    "word": "간단히",
+    "meaning": "健康だ"
   },
   {
     "word": "간식",
-    "meaning": "間食、おやつ 66 건너가다 渡って行く、渡る、横切る"
+    "meaning": "間食"
+  },
+  {
+    "word": "간식",
+    "meaning": "おやつ"
+  },
+  {
+    "word": "간식",
+    "meaning": "渡って行く"
+  },
+  {
+    "word": "간식",
+    "meaning": "渡る"
+  },
+  {
+    "word": "간식",
+    "meaning": "横切る"
   },
   {
     "word": "간장",
-    "meaning": "醤油 67 건너다 渡る"
+    "meaning": "醤油"
+  },
+  {
+    "word": "간장",
+    "meaning": "渡る"
   },
   {
     "word": "간호사",
-    "meaning": "看護士 68 건너편 向こう側、向かい"
+    "meaning": "看護士"
+  },
+  {
+    "word": "간호사",
+    "meaning": "向こう側"
+  },
+  {
+    "word": "간호사",
+    "meaning": "向かい"
   },
   {
     "word": "갈비",
-    "meaning": "カルビ 69 건물 建物"
+    "meaning": "カルビ"
+  },
+  {
+    "word": "갈비",
+    "meaning": "建物"
   },
   {
     "word": "갈비탕",
-    "meaning": "カルビタン 70 건배 乾杯"
+    "meaning": "カルビタン"
+  },
+  {
+    "word": "갈비탕",
+    "meaning": "乾杯"
   },
   {
     "word": "갈색",
-    "meaning": "褐色、茶色 71 걷다 歩く"
+    "meaning": "褐色"
+  },
+  {
+    "word": "갈색",
+    "meaning": "茶色"
+  },
+  {
+    "word": "갈색",
+    "meaning": "歩く"
   },
   {
     "word": "갈아타다",
-    "meaning": "乗り換える 72 걸다 かける"
+    "meaning": "乗り換える"
+  },
+  {
+    "word": "갈아타다",
+    "meaning": "かける"
   },
   {
     "word": "감",
-    "meaning": "柿 73 걸리다 かかる"
+    "meaning": "柿"
+  },
+  {
+    "word": "감",
+    "meaning": "かかる"
   },
   {
     "word": "감기",
-    "meaning": "風邪 74 걸어가다 歩いて行く"
+    "meaning": "風邪"
+  },
+  {
+    "word": "감기",
+    "meaning": "歩いて行く"
   },
   {
     "word": "감기약",
-    "meaning": "風邪薬 75 걸어오다 歩いて来る"
+    "meaning": "風邪薬"
+  },
+  {
+    "word": "감기약",
+    "meaning": "歩いて来る"
   },
   {
     "word": "검은색",
-    "meaning": "黒、黒色"
+    "meaning": "黒"
+  },
+  {
+    "word": "검은색",
+    "meaning": "黒色"
   },
   {
     "word": "감동",
-    "meaning": "感動 77 것 もの、こと"
+    "meaning": "感動"
+  },
+  {
+    "word": "감동",
+    "meaning": "もの"
+  },
+  {
+    "word": "감동",
+    "meaning": "こと"
   },
   {
     "word": "감동하다",
-    "meaning": "感動する 78 게임 ゲーム、遊び"
+    "meaning": "感動する"
+  },
+  {
+    "word": "감동하다",
+    "meaning": "ゲーム"
+  },
+  {
+    "word": "감동하다",
+    "meaning": "遊び"
   },
   {
     "word": "감사",
-    "meaning": "感謝 79 겨울 冬"
+    "meaning": "感謝"
+  },
+  {
+    "word": "감사",
+    "meaning": "冬"
   },
   {
     "word": "감사드립니다",
-    "meaning": "ありがとうございます 80 겨울방학 冬休み"
+    "meaning": "ありがとうございます"
   },
   {
-    "word": "한글",
-    "meaning": "日本語 No. 한글 日本語"
+    "word": "감사드립니다",
+    "meaning": "冬休み"
   },
   {
     "word": "결과",
-    "meaning": "結果 121 골목 路地、裏通り"
+    "meaning": "結果"
+  },
+  {
+    "word": "결과",
+    "meaning": "路地"
+  },
+  {
+    "word": "결과",
+    "meaning": "裏通り"
   },
   {
     "word": "결정",
-    "meaning": "決定 122 골프 ゴルフ"
+    "meaning": "決定"
+  },
+  {
+    "word": "결정",
+    "meaning": "ゴルフ"
   },
   {
     "word": "결정하다",
-    "meaning": "決定する 123 곱다 美しい"
+    "meaning": "決定する"
+  },
+  {
+    "word": "결정하다",
+    "meaning": "美しい"
   },
   {
     "word": "결혼",
-    "meaning": "結婚 124 곳 ところ"
+    "meaning": "結婚"
+  },
+  {
+    "word": "결혼",
+    "meaning": "ところ"
   },
   {
     "word": "결혼식",
-    "meaning": "結婚式 125 공 ボール、玉"
+    "meaning": "結婚式"
+  },
+  {
+    "word": "결혼식",
+    "meaning": "ボール"
+  },
+  {
+    "word": "결혼식",
+    "meaning": "玉"
   },
   {
     "word": "결혼하다",
-    "meaning": "結婚する 126 공간 空間"
+    "meaning": "結婚する"
+  },
+  {
+    "word": "결혼하다",
+    "meaning": "空間"
   },
   {
     "word": "경기",
-    "meaning": "競技、試合 127 공기 空気"
+    "meaning": "競技"
+  },
+  {
+    "word": "경기",
+    "meaning": "試合"
+  },
+  {
+    "word": "경기",
+    "meaning": "空気"
   },
   {
     "word": "경기장",
-    "meaning": "競技場 128 공무원 公務員"
+    "meaning": "競技場"
+  },
+  {
+    "word": "경기장",
+    "meaning": "公務員"
   },
   {
     "word": "경복궁",
-    "meaning": "景福宮 129 공부 勉強"
+    "meaning": "景福宮"
+  },
+  {
+    "word": "경복궁",
+    "meaning": "勉強"
   },
   {
     "word": "경주",
-    "meaning": "慶州 130 공부하다 勉強する"
+    "meaning": "慶州"
+  },
+  {
+    "word": "경주",
+    "meaning": "勉強する"
   },
   {
     "word": "경찰",
-    "meaning": "警察 131 공연 公演"
+    "meaning": "警察"
+  },
+  {
+    "word": "경찰",
+    "meaning": "公演"
   },
   {
     "word": "경찰관",
-    "meaning": "警察官 132 공원 公園"
+    "meaning": "警察官"
+  },
+  {
+    "word": "경찰관",
+    "meaning": "公園"
   },
   {
     "word": "경찰서",
-    "meaning": "警察署 133 공중전화 公衆電話"
+    "meaning": "警察署"
+  },
+  {
+    "word": "경찰서",
+    "meaning": "公衆電話"
   },
   {
     "word": "경치",
-    "meaning": "景色、風景 134 공짜 ただ、無料"
+    "meaning": "景色"
+  },
+  {
+    "word": "경치",
+    "meaning": "風景"
+  },
+  {
+    "word": "경치",
+    "meaning": "ただ"
+  },
+  {
+    "word": "경치",
+    "meaning": "無料"
   },
   {
     "word": "경험",
-    "meaning": "経験 135 공책 ノート"
+    "meaning": "経験"
+  },
+  {
+    "word": "경험",
+    "meaning": "ノート"
   },
   {
     "word": "계단",
-    "meaning": "階段 136 공항 空港"
+    "meaning": "階段"
+  },
+  {
+    "word": "계단",
+    "meaning": "空港"
   },
   {
     "word": "계란",
-    "meaning": "鶏卵、たまご 137 공휴일 祝日"
+    "meaning": "鶏卵"
+  },
+  {
+    "word": "계란",
+    "meaning": "たまご"
+  },
+  {
+    "word": "계란",
+    "meaning": "祝日"
   },
   {
     "word": "계산하다",
-    "meaning": "計算する 138 과 課"
+    "meaning": "計算する"
+  },
+  {
+    "word": "계산하다",
+    "meaning": "課"
   },
   {
     "word": "계속",
-    "meaning": "続けて 139 과거 過去"
+    "meaning": "続けて"
+  },
+  {
+    "word": "계속",
+    "meaning": "過去"
   },
   {
     "word": "계시다",
-    "meaning": "いらっしゃる 140 과일 果物"
+    "meaning": "いらっしゃる"
+  },
+  {
+    "word": "계시다",
+    "meaning": "果物"
   },
   {
     "word": "계절",
-    "meaning": "季節 141 과자 菓子"
+    "meaning": "季節"
+  },
+  {
+    "word": "계절",
+    "meaning": "菓子"
   },
   {
     "word": "계획",
-    "meaning": "計画 142 과학 科学"
+    "meaning": "計画"
+  },
+  {
+    "word": "계획",
+    "meaning": "科学"
   },
   {
     "word": "고기",
-    "meaning": "肉 143 관계 関係"
+    "meaning": "肉"
+  },
+  {
+    "word": "고기",
+    "meaning": "関係"
   },
   {
     "word": "고등학교",
-    "meaning": "高等学校 144 관광하다 観光する"
+    "meaning": "高等学校"
+  },
+  {
+    "word": "고등학교",
+    "meaning": "観光する"
   },
   {
     "word": "고등학생",
-    "meaning": "高校生 145 관심 関心、興味"
+    "meaning": "高校生"
+  },
+  {
+    "word": "고등학생",
+    "meaning": "関心"
+  },
+  {
+    "word": "고등학생",
+    "meaning": "興味"
   },
   {
     "word": "고르다",
-    "meaning": "選ぶ 146 광고 広告"
+    "meaning": "選ぶ"
+  },
+  {
+    "word": "고르다",
+    "meaning": "広告"
   },
   {
     "word": "고마웠습니다",
-    "meaning": "ありがとうございました 147 괜찮다 大丈夫だ、構わない"
+    "meaning": "ありがとうございました"
+  },
+  {
+    "word": "고마웠습니다",
+    "meaning": "大丈夫だ"
+  },
+  {
+    "word": "고마웠습니다",
+    "meaning": "構わない"
   },
   {
     "word": "고맙다",
-    "meaning": "ありがたい 148 괜찮습니다 大丈夫です、結構です"
+    "meaning": "ありがたい"
+  },
+  {
+    "word": "고맙다",
+    "meaning": "大丈夫です"
+  },
+  {
+    "word": "고맙다",
+    "meaning": "結構です"
   },
   {
     "word": "고맙습니다",
-    "meaning": "ありがとうございます 149 교과서 教科書"
+    "meaning": "ありがとうございます"
+  },
+  {
+    "word": "고맙습니다",
+    "meaning": "教科書"
   },
   {
     "word": "교수",
@@ -293,27 +657,47 @@
   },
   {
     "word": "고속버스",
-    "meaning": "高速バス 152 교체 交代"
+    "meaning": "高速バス"
+  },
+  {
+    "word": "고속버스",
+    "meaning": "交代"
   },
   {
     "word": "고양이",
-    "meaning": "猫 153 교통 交通"
+    "meaning": "猫"
+  },
+  {
+    "word": "고양이",
+    "meaning": "交通"
   },
   {
     "word": "고장",
-    "meaning": "故障 154 교통사고 交通事故"
+    "meaning": "故障"
+  },
+  {
+    "word": "고장",
+    "meaning": "交通事故"
   },
   {
     "word": "고추",
-    "meaning": "唐辛子 155 교회 教会"
+    "meaning": "唐辛子"
+  },
+  {
+    "word": "고추",
+    "meaning": "教会"
   },
   {
     "word": "고추장",
-    "meaning": "コチュジャン 156 구 9"
+    "meaning": "コチュジャン"
   },
   {
     "word": "고치다",
-    "meaning": "なおす 157 구경하다 見物する"
+    "meaning": "なおす"
+  },
+  {
+    "word": "고치다",
+    "meaning": "見物する"
   },
   {
     "word": "구두",
@@ -321,82 +705,190 @@
   },
   {
     "word": "고향",
-    "meaning": "故郷、ふるさと 159 구름 雲"
+    "meaning": "故郷"
+  },
+  {
+    "word": "고향",
+    "meaning": "ふるさと"
+  },
+  {
+    "word": "고향",
+    "meaning": "雲"
   },
   {
     "word": "곧",
-    "meaning": "すぐ 160 구십 90"
-  },
-  {
-    "word": "한글",
-    "meaning": "日本語 No. 한글 日本語"
+    "meaning": "すぐ"
   },
   {
     "word": "구월",
-    "meaning": "９月 201 그리고 そして"
+    "meaning": "月"
+  },
+  {
+    "word": "구월",
+    "meaning": "そして"
   },
   {
     "word": "국",
-    "meaning": "スープ、汁 203 그림 絵"
+    "meaning": "スープ"
+  },
+  {
+    "word": "국",
+    "meaning": "汁"
+  },
+  {
+    "word": "국",
+    "meaning": "絵"
   },
   {
     "word": "국내",
-    "meaning": "国内 204 그만 それくらいで、それで"
+    "meaning": "国内"
+  },
+  {
+    "word": "국내",
+    "meaning": "それくらいで"
+  },
+  {
+    "word": "국내",
+    "meaning": "それで"
   },
   {
     "word": "국립",
-    "meaning": "国立 205 그분 そのかた"
+    "meaning": "国立"
+  },
+  {
+    "word": "국립",
+    "meaning": "そのかた"
   },
   {
     "word": "국수",
-    "meaning": "麺、麺類 206 그저께 おととい"
+    "meaning": "麺"
+  },
+  {
+    "word": "국수",
+    "meaning": "麺類"
+  },
+  {
+    "word": "국수",
+    "meaning": "おととい"
   },
   {
     "word": "국어",
-    "meaning": "国語 207 그중 その中"
+    "meaning": "国語"
+  },
+  {
+    "word": "국어",
+    "meaning": "その中"
   },
   {
     "word": "국적",
-    "meaning": "国籍 208 그쪽 そちら、そのかた"
+    "meaning": "国籍"
+  },
+  {
+    "word": "국적",
+    "meaning": "そちら"
+  },
+  {
+    "word": "국적",
+    "meaning": "そのかた"
   },
   {
     "word": "국제",
-    "meaning": "国際 209 그치다 終わる、止む"
+    "meaning": "国際"
+  },
+  {
+    "word": "국제",
+    "meaning": "終わる"
+  },
+  {
+    "word": "국제",
+    "meaning": "止む"
   },
   {
     "word": "군인",
-    "meaning": "軍人 210 극장 劇場、映画館"
+    "meaning": "軍人"
+  },
+  {
+    "word": "군인",
+    "meaning": "劇場"
+  },
+  {
+    "word": "군인",
+    "meaning": "映画館"
   },
   {
     "word": "굽다",
-    "meaning": "焼く 211 근처 近所"
+    "meaning": "焼く"
+  },
+  {
+    "word": "굽다",
+    "meaning": "近所"
   },
   {
     "word": "권",
-    "meaning": "～巻 212 글 文章、文字"
+    "meaning": "巻"
+  },
+  {
+    "word": "권",
+    "meaning": "文章"
+  },
+  {
+    "word": "권",
+    "meaning": "文字"
   },
   {
     "word": "귀",
-    "meaning": "耳 213 글쎄요 そうですね、どうでしょうね"
+    "meaning": "耳"
+  },
+  {
+    "word": "귀",
+    "meaning": "そうですね"
+  },
+  {
+    "word": "귀",
+    "meaning": "どうでしょうね"
   },
   {
     "word": "귀엽다",
-    "meaning": "かわいい 214 금방 すぐ、さっき"
+    "meaning": "かわいい"
+  },
+  {
+    "word": "귀엽다",
+    "meaning": "すぐ"
+  },
+  {
+    "word": "귀엽다",
+    "meaning": "さっき"
   },
   {
     "word": "규칙",
-    "meaning": "規則 215 금연 禁煙"
+    "meaning": "規則"
+  },
+  {
+    "word": "규칙",
+    "meaning": "禁煙"
   },
   {
     "word": "귤",
-    "meaning": "みかん 216 금요일 金曜日"
+    "meaning": "みかん"
+  },
+  {
+    "word": "귤",
+    "meaning": "金曜日"
   },
   {
     "word": "그",
-    "meaning": "その 217 금주 禁酒"
+    "meaning": "その"
+  },
+  {
+    "word": "그",
+    "meaning": "禁酒"
   },
   {
     "word": "그거",
-    "meaning": "それ 218 급 級"
+    "meaning": "それ"
+  },
+  {
+    "word": "그거",
+    "meaning": "級"
   }
 ]
